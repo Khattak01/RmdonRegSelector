@@ -2,6 +2,7 @@ import sys
 import random
 #print("Hello, World")
 #print(sys.version)
+
 stdReg = {
     0:'FA17-BSE-(103,131,160)',
     1:'FA17-BSE (106,108,142)',
@@ -12,11 +13,14 @@ stdReg = {
     6:'FA17-BSE-(102,149)',
     7:'FA17-BSE-(145,152,143)',
     }
+
 def printStd(dic):
     for item in dic:
         print(dic[item])
 print('Orignal List')
 printStd(stdReg)
+
+
 print('-------------------------')
 print('Randomly generated LIST : ')
 randomList =(random.sample(range(0, len(stdReg)), len(stdReg)))
